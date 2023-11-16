@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int ac, char **a)
+int main(int ac, char **av)
 {
 	int i;
 	int sum = 0;
@@ -11,7 +11,7 @@ int main(int ac, char **a)
 
 	for (i = 1; i < ac; i++)
 	{
-		prinf("argv[%d] = %s\n", i, av[i]);
+		printf("argv[%d] = %s\n", i, av[i]);
 		sum += atoi(av[i]);
 	}
 	printf("sum is %d\n", sum);
